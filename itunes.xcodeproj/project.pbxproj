@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4B2E665C2758A9B8002D6278 /* itunesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E665B2758A9B8002D6278 /* itunesApp.swift */; };
-		4B2E665E2758A9B8002D6278 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E665D2758A9B8002D6278 /* ContentView.swift */; };
+		4B2E665E2758A9B8002D6278 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E665D2758A9B8002D6278 /* MainView.swift */; };
 		4B2E66602758A9BB002D6278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E665F2758A9BB002D6278 /* Assets.xcassets */; };
 		4B2E66632758A9BB002D6278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E66622758A9BB002D6278 /* Preview Assets.xcassets */; };
 		4B2E66772758A9BB002D6278 /* itunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E66762758A9BB002D6278 /* itunesUITests.swift */; };
 		4B2E66792758A9BB002D6278 /* itunesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */; };
+		4BDE547F2758C62200E5E6FE /* ItunesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE547E2758C62200E5E6FE /* ItunesAPIService.swift */; };
+		4BDE54832758D5B900E5E6FE /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE54822758D5B900E5E6FE /* SearchAPI.swift */; };
+		4BDE54872758DB0F00E5E6FE /* URLRequestConvertible+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE54862758DB0F00E5E6FE /* URLRequestConvertible+Extension.swift */; };
+		4BDE548A2758DCCD00E5E6FE /* ItunesRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE54892758DCCD00E5E6FE /* ItunesRepositories.swift */; };
+		4BDE548D2758E09100E5E6FE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDE548C2758E09100E5E6FE /* MainViewModel.swift */; };
+		4BDE5490275910F800E5E6FE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4BDE548F275910F800E5E6FE /* Kingfisher */; };
 		4BE460152758B0EA002680FF /* ItemsStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE460142758B0EA002680FF /* ItemsStructTests.swift */; };
 		4BE460182758B22C002680FF /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE460172758B22C002680FF /* Items.swift */; };
 		4BE4601B2758B491002680FF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4BE4601A2758B491002680FF /* Alamofire */; };
@@ -38,13 +44,18 @@
 /* Begin PBXFileReference section */
 		4B2E66582758A9B8002D6278 /* itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E665B2758A9B8002D6278 /* itunesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesApp.swift; sourceTree = "<group>"; };
-		4B2E665D2758A9B8002D6278 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B2E665D2758A9B8002D6278 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4B2E665F2758A9BB002D6278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B2E66622758A9BB002D6278 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B2E66682758A9BB002D6278 /* itunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E66722758A9BB002D6278 /* itunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E66762758A9BB002D6278 /* itunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesUITests.swift; sourceTree = "<group>"; };
 		4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BDE547E2758C62200E5E6FE /* ItunesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPIService.swift; sourceTree = "<group>"; };
+		4BDE54822758D5B900E5E6FE /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		4BDE54862758DB0F00E5E6FE /* URLRequestConvertible+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestConvertible+Extension.swift"; sourceTree = "<group>"; };
+		4BDE54892758DCCD00E5E6FE /* ItunesRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesRepositories.swift; sourceTree = "<group>"; };
+		4BDE548C2758E09100E5E6FE /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4BE460142758B0EA002680FF /* ItemsStructTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsStructTests.swift; sourceTree = "<group>"; };
 		4BE460172758B22C002680FF /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDE5490275910F800E5E6FE /* Kingfisher in Frameworks */,
 				4BE4601B2758B491002680FF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,9 +110,10 @@
 		4B2E665A2758A9B8002D6278 /* itunes */ = {
 			isa = PBXGroup;
 			children = (
+				4BDE54792758C55200E5E6FE /* Application */,
 				4BE460162758B213002680FF /* Models */,
-				4B2E665B2758A9B8002D6278 /* itunesApp.swift */,
-				4B2E665D2758A9B8002D6278 /* ContentView.swift */,
+				4BDE547C2758C5A800E5E6FE /* Common */,
+				4BDE547A2758C56E00E5E6FE /* Modules */,
 				4B2E665F2758A9BB002D6278 /* Assets.xcassets */,
 				4B2E66612758A9BB002D6278 /* Preview Content */,
 			);
@@ -118,7 +131,7 @@
 		4B2E666B2758A9BB002D6278 /* itunesTests */ = {
 			isa = PBXGroup;
 			children = (
-				4BE460142758B0EA002680FF /* ItemsStructTests.swift */,
+				4BDE54782758C14100E5E6FE /* Test Models */,
 			);
 			path = itunesTests;
 			sourceTree = "<group>";
@@ -130,6 +143,106 @@
 				4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */,
 			);
 			path = itunesUITests;
+			sourceTree = "<group>";
+		};
+		4BDE54782758C14100E5E6FE /* Test Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BE460142758B0EA002680FF /* ItemsStructTests.swift */,
+			);
+			path = "Test Models";
+			sourceTree = "<group>";
+		};
+		4BDE54792758C55200E5E6FE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E665B2758A9B8002D6278 /* itunesApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4BDE547A2758C56E00E5E6FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE547B2758C58700E5E6FE /* Content */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4BDE547B2758C58700E5E6FE /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E665D2758A9B8002D6278 /* MainView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		4BDE547C2758C5A800E5E6FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54842758DABA00E5E6FE /* Utilities */,
+				4BDE54802758D59F00E5E6FE /* Networking */,
+				4BDE547D2758C5E700E5E6FE /* Services */,
+				4BDE54882758DCAA00E5E6FE /* Repositories */,
+				4BDE548B2758E00300E5E6FE /* View Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4BDE547D2758C5E700E5E6FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE547E2758C62200E5E6FE /* ItunesAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BDE54802758D59F00E5E6FE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54812758D5A900E5E6FE /* API */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4BDE54812758D5A900E5E6FE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54822758D5B900E5E6FE /* SearchAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4BDE54842758DABA00E5E6FE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54852758DAC700E5E6FE /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4BDE54852758DAC700E5E6FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54862758DB0F00E5E6FE /* URLRequestConvertible+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4BDE54882758DCAA00E5E6FE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE54892758DCCD00E5E6FE /* ItunesRepositories.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		4BDE548B2758E00300E5E6FE /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BDE548C2758E09100E5E6FE /* MainViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		4BE460162758B213002680FF /* Models */ = {
@@ -158,6 +271,7 @@
 			name = itunes;
 			packageProductDependencies = (
 				4BE4601A2758B491002680FF /* Alamofire */,
+				4BDE548F275910F800E5E6FE /* Kingfisher */,
 			);
 			productName = itunes;
 			productReference = 4B2E66582758A9B8002D6278 /* itunes.app */;
@@ -234,6 +348,7 @@
 			mainGroup = 4B2E664F2758A9B8002D6278;
 			packageReferences = (
 				4BE460192758B491002680FF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4BDE548E275910F800E5E6FE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 4B2E66592758A9B8002D6278 /* Products */;
 			projectDirPath = "";
@@ -277,9 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B2E665E2758A9B8002D6278 /* ContentView.swift in Sources */,
+				4BDE54832758D5B900E5E6FE /* SearchAPI.swift in Sources */,
+				4BDE548A2758DCCD00E5E6FE /* ItunesRepositories.swift in Sources */,
+				4BDE547F2758C62200E5E6FE /* ItunesAPIService.swift in Sources */,
+				4B2E665E2758A9B8002D6278 /* MainView.swift in Sources */,
+				4BDE54872758DB0F00E5E6FE /* URLRequestConvertible+Extension.swift in Sources */,
 				4BE460182758B22C002680FF /* Items.swift in Sources */,
 				4B2E665C2758A9B8002D6278 /* itunesApp.swift in Sources */,
+				4BDE548D2758E09100E5E6FE /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +747,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4BDE548E275910F800E5E6FE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		4BE460192758B491002680FF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -638,6 +766,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4BDE548F275910F800E5E6FE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BDE548E275910F800E5E6FE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		4BE4601A2758B491002680FF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4BE460192758B491002680FF /* XCRemoteSwiftPackageReference "Alamofire" */;
