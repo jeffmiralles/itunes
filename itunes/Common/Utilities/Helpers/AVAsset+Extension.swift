@@ -11,7 +11,6 @@ import AVKit
 extension AVAsset{
     func videoSizeRatio(completion: @escaping (CGFloat) -> Void) {
         DispatchQueue.global(qos: .utility).async {
-            print("This is run on a background queue")
             let tracks = self.tracks(withMediaType: AVMediaType.video)
             if tracks.count > 0 {
                 let videoTrack = tracks[0]

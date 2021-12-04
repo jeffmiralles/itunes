@@ -49,7 +49,6 @@ struct MainView: View {
                         .padding(.horizontal, 16)
                     }
                     .onAppear {
-                        print("trackID: \(trackID)")
                         proxy.scrollTo(trackID)
                     }
                 } header: {

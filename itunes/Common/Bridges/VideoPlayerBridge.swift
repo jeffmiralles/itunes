@@ -25,6 +25,6 @@ struct VideoPlayerBridge: UIViewControllerRepresentable {
     
     // MARK: - Updates
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-        print("AAAA")
+        
     }
 }
