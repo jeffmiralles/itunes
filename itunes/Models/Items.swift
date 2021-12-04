@@ -14,11 +14,11 @@ struct Items: Codable {
 }
 
 // MARK: - Result
-struct Result: Codable, Identifiable {
-    let id = UUID()
+struct Result: Codable {
     let wrapperType: WrapperType
     let kind: Kind?
-    let collectionID, trackID: Int?
+    let collectionID: Int?
+    let trackID: Int
     let artistName: String
     let collectionName, trackName, collectionCensoredName, trackCensoredName: String?
     let collectionArtistID: Int?
