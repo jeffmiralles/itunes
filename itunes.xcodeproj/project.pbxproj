@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1738A5275BAE79002C396F /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1738A4275BAE79002C396F /* MainViewModelTests.swift */; };
 		4B2E665C2758A9B8002D6278 /* itunesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E665B2758A9B8002D6278 /* itunesApp.swift */; };
 		4B2E665E2758A9B8002D6278 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E665D2758A9B8002D6278 /* MainView.swift */; };
 		4B2E66602758A9BB002D6278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E665F2758A9BB002D6278 /* Assets.xcassets */; };
 		4B2E66632758A9BB002D6278 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E66622758A9BB002D6278 /* Preview Assets.xcassets */; };
-		4B2E66772758A9BB002D6278 /* itunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E66762758A9BB002D6278 /* itunesUITests.swift */; };
-		4B2E66792758A9BB002D6278 /* itunesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */; };
 		4B63E3FD275A363700A3001E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63E3FC275A363700A3001E /* Date+Extension.swift */; };
 		4B63E3FF275A4C6B00A3001E /* ResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63E3FE275A4C6B00A3001E /* ResultRow.swift */; };
 		4B63E401275A960200A3001E /* TrailerVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B63E400275A960200A3001E /* TrailerVideo.swift */; };
@@ -45,25 +44,16 @@
 			remoteGlobalIDString = 4B2E66572758A9B8002D6278;
 			remoteInfo = itunes;
 		};
-		4B2E66732758A9BB002D6278 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B2E66502758A9B8002D6278 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B2E66572758A9B8002D6278;
-			remoteInfo = itunes;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B1738A4275BAE79002C396F /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		4B2E66582758A9B8002D6278 /* itunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = itunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E665B2758A9B8002D6278 /* itunesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesApp.swift; sourceTree = "<group>"; };
 		4B2E665D2758A9B8002D6278 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4B2E665F2758A9BB002D6278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B2E66622758A9BB002D6278 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B2E66682758A9BB002D6278 /* itunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B2E66722758A9BB002D6278 /* itunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B2E66762758A9BB002D6278 /* itunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesUITests.swift; sourceTree = "<group>"; };
-		4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4B63E3FC275A363700A3001E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4B63E3FE275A4C6B00A3001E /* ResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRow.swift; sourceTree = "<group>"; };
 		4B63E400275A960200A3001E /* TrailerVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerVideo.swift; sourceTree = "<group>"; };
@@ -103,22 +93,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B2E666F2758A9BB002D6278 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1738A3275BAE5D002C396F /* Test View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B1738A4275BAE79002C396F /* MainViewModelTests.swift */,
+			);
+			path = "Test View Models";
+			sourceTree = "<group>";
+		};
 		4B2E664F2758A9B8002D6278 = {
 			isa = PBXGroup;
 			children = (
 				4B2E665A2758A9B8002D6278 /* itunes */,
 				4B2E666B2758A9BB002D6278 /* itunesTests */,
-				4B2E66752758A9BB002D6278 /* itunesUITests */,
 				4B2E66592758A9B8002D6278 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,7 +118,6 @@
 			children = (
 				4B2E66582758A9B8002D6278 /* itunes.app */,
 				4B2E66682758A9BB002D6278 /* itunesTests.xctest */,
-				4B2E66722758A9BB002D6278 /* itunesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,19 +147,11 @@
 		4B2E666B2758A9BB002D6278 /* itunesTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B1738A3275BAE5D002C396F /* Test View Models */,
 				4B858ECA275B52300057172D /* Test Repositories */,
 				4BDE54782758C14100E5E6FE /* Test Models */,
 			);
 			path = itunesTests;
-			sourceTree = "<group>";
-		};
-		4B2E66752758A9BB002D6278 /* itunesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4B2E66762758A9BB002D6278 /* itunesUITests.swift */,
-				4B2E66782758A9BB002D6278 /* itunesUITestsLaunchTests.swift */,
-			);
-			path = itunesUITests;
 			sourceTree = "<group>";
 		};
 		4B63E402275AC61100A3001E /* Shared */ = {
@@ -382,24 +363,6 @@
 			productReference = 4B2E66682758A9BB002D6278 /* itunesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4B2E66712758A9BB002D6278 /* itunesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B2E66822758A9BB002D6278 /* Build configuration list for PBXNativeTarget "itunesUITests" */;
-			buildPhases = (
-				4B2E666E2758A9BB002D6278 /* Sources */,
-				4B2E666F2758A9BB002D6278 /* Frameworks */,
-				4B2E66702758A9BB002D6278 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4B2E66742758A9BB002D6278 /* PBXTargetDependency */,
-			);
-			name = itunesUITests;
-			productName = itunesUITests;
-			productReference = 4B2E66722758A9BB002D6278 /* itunesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -416,10 +379,6 @@
 					4B2E66672758A9BB002D6278 = {
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
-						TestTargetID = 4B2E66572758A9B8002D6278;
-					};
-					4B2E66712758A9BB002D6278 = {
-						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 4B2E66572758A9B8002D6278;
 					};
 				};
@@ -443,7 +402,6 @@
 			targets = (
 				4B2E66572758A9B8002D6278 /* itunes */,
 				4B2E66672758A9BB002D6278 /* itunesTests */,
-				4B2E66712758A9BB002D6278 /* itunesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -460,13 +418,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4B2E66662758A9BB002D6278 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B2E66702758A9BB002D6278 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,17 +457,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1738A5275BAE79002C396F /* MainViewModelTests.swift in Sources */,
 				4BE460152758B0EA002680FF /* ItemsStructTests.swift in Sources */,
 				4B858ECC275B52740057172D /* ItunesRepositoriesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4B2E666E2758A9BB002D6278 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B2E66792758A9BB002D6278 /* itunesUITestsLaunchTests.swift in Sources */,
-				4B2E66772758A9BB002D6278 /* itunesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,11 +470,6 @@
 			isa = PBXTargetDependency;
 			target = 4B2E66572758A9B8002D6278 /* itunes */;
 			targetProxy = 4B2E66692758A9BB002D6278 /* PBXContainerItemProxy */;
-		};
-		4B2E66742758A9BB002D6278 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4B2E66572758A9B8002D6278 /* itunes */;
-			targetProxy = 4B2E66732758A9BB002D6278 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -660,8 +598,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"itunes/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie Guide";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -675,7 +615,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jefferson-Miralles.itunes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = itunes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,8 +630,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"itunes/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie Guide";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -705,7 +647,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jefferson-Miralles.itunes";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = itunes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -763,50 +705,6 @@
 			};
 			name = Release;
 		};
-		4B2E66832758A9BB002D6278 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Jefferson-Miralles.itunesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = itunes;
-			};
-			name = Debug;
-		};
-		4B2E66842758A9BB002D6278 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Jefferson-Miralles.itunesUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = itunes;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -833,15 +731,6 @@
 			buildConfigurations = (
 				4B2E66802758A9BB002D6278 /* Debug */,
 				4B2E66812758A9BB002D6278 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4B2E66822758A9BB002D6278 /* Build configuration list for PBXNativeTarget "itunesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B2E66832758A9BB002D6278 /* Debug */,
-				4B2E66842758A9BB002D6278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

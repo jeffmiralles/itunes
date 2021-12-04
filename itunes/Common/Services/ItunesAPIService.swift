@@ -13,6 +13,7 @@ protocol ItunesAPIServiceProtocol {
 }
 
 final class ItunesAPIService: ItunesAPIServiceProtocol {
+    // MARK: - Functions
     func searchTerm(query: String, completion: @escaping (AFDataResponse<Items>) -> Void) {
         SearchAPI.searchTerm(query: query, completion: completion)
     }

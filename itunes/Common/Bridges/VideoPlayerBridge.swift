@@ -14,7 +14,7 @@ struct VideoPlayerBridge: UIViewControllerRepresentable {
     var player : AVPlayer
     
     // MARK: - Init
-    func makeUIViewController(context: Context) ->  UIViewController {
+    func makeUIViewController(context: Context) ->  AVPlayerViewController {
         let controller = AVPlayerViewController()
         controller.player = player
         controller.showsPlaybackControls = true
@@ -24,7 +24,7 @@ struct VideoPlayerBridge: UIViewControllerRepresentable {
     }
     
     // MARK: - Updates
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-        uiViewController.view.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: 200, height: 200))
+    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
+        print("AAAA")
     }
 }

@@ -14,6 +14,7 @@ struct MainView: View {
     
     // MARK: Observable Objects
     @EnvironmentObject var mainVM: MainViewModel
+    @EnvironmentObject var detailVM: DetailViewModel
     
     // MARK: - Body
     var body: some View {
@@ -30,24 +31,35 @@ struct MainView: View {
             },
             set: {
                 self.trackID = $0 ?? 0
+                if self.trackID == 0 {
+                    self.detailVM.stopVideo()
+                }
             }
         )
-        return List {
-            Section {
-                ForEach(mainVM.items.results, id: \.trackID) { result in
-                    NavigationLink(tag: result.trackID, selection: binding) {
-                        DetailView(result: result)
-                    } label: {
-                        ResultRow(result)
+        return ScrollViewReader { proxy in
+            List {
+                Section {
+                    ForEach(mainVM.items.results, id: \.trackID) { result in
+                        NavigationLink(tag: result.trackID, selection: binding) {
+                            DetailView(result: result)
+                        } label: {
+                            ResultRow(result)
+                        }
+                        .padding(.vertical, 8)
+                        .padding(.horizontal, 16)
                     }
-                    .padding(16)
+                    .onAppear {
+                        print("trackID: \(trackID)")
+                        proxy.scrollTo(trackID)
+                    }
+                } header: {
+                    HStack {
+                        Text("Last Visit: \(savedDate.getFormattedDate(format: "MMMM d, YYYY h:mm a"))")
+                    }
                 }
-            } header: {
-                HStack {
-                    Text("Last Visit: \(savedDate.getFormattedDate(format: "MMMM d, YYYY h:mm a"))")
-                }
+                .listRowInsets(EdgeInsets())
             }
-            .listRowInsets(EdgeInsets())
+            .listStyle(.insetGrouped)
         }
         .navigationBarTitle("Movies")
     }

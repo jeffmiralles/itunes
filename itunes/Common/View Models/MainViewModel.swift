@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Main View Model
 final class MainViewModel: ObservableObject {
     // MARK: - Property Wrappers
     @Published var items = Items(resultCount: 0, results: [])
@@ -22,6 +23,9 @@ final class MainViewModel: ObservableObject {
         search()
     }
     
+    // MARK: - Functions
+    
+    /// Search for a term. Response will be of type `Items`
     func search() {
         repository.searchTerm(query: "star") { apiResponse in
             switch apiResponse.result {

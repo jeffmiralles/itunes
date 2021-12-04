@@ -20,7 +20,6 @@ struct DetailView: View {
     let result: Result
     
     // MARK: States
-    @State private var player = AVPlayer()
     @State private var selected: Int?
     
     // MARK: - Body
@@ -29,10 +28,10 @@ struct DetailView: View {
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading) {
                     header
-                        .padding(.top, 10)
+                        .padding(.top, 16)
                     divider
                     if let previewURL = result.previewURL, let url = URL(string: previewURL) {
-                        TrailerVideo(player: player, url: url, width: geometry.size.width)
+                        TrailerVideo(player: $detailVM.player, url: url, width: geometry.size.width)
                     }
                     divider
                     longDescription
@@ -41,6 +40,7 @@ struct DetailView: View {
                     othersList
                 }
             }
+            
         }
         .padding(.horizontal, 16)
         .navigationBarTitleDisplayMode(.inline)
@@ -59,9 +59,11 @@ struct DetailView: View {
                         .frame(width: 67, height: 100)
                 }
                 .cornerRadius(12)
+                .layoutPriority(1)
             VStack(alignment: .leading) {
                 Text(result.trackName ?? "")
                     .font(.system(size: 24, weight: .bold, design: .rounded))
+                    .lineLimit(2)
                     .foregroundColor(.primary)
                 Text(result.primaryGenreName)
                     .font(.system(size: 14, design: .rounded))
@@ -93,6 +95,7 @@ struct DetailView: View {
                 }
             }
         }
+        .frame(height: 108)
     }
     
     /// A custom divider or separator with a set of padding vertically.
